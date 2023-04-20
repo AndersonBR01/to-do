@@ -84,7 +84,9 @@ body{
     padding: 12px;
     border-radius: 5px;
 }
-
+.task-item i:hover{
+    cursor: pointer;
+}
 /*utili*/
 
 .error {
@@ -93,4 +95,41 @@ body{
 
 .error::placeholder{
     color: red;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: #41b883;
+    
+}
+
+@media (max-width: 375px)  {
+    body{
+        width: 100%;
+        
+    }
+    .container{
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 400px)  {
+    body{
+        width: 100%;
+    }
+    
+    .container{
+        min-width: 500px;
+    }
+}
+
+@media (max-width: 545px)  {
+    body{
+        width: 100%;
+    }
+
+    .container{
+        min-width: 550px;
+    }
+    
 }
